@@ -1,0 +1,106 @@
+.top-wrap {
+  width: 100%;
+  height: 100px;
+  background-color: #fff; }
+  .top-wrap .top {
+    width: 1130px;
+    height: 98px;
+    margin: 0 auto; }
+    .top-wrap .top .logo {
+      display: block;
+      float: left;
+      width: 48px;
+      height: 48px;
+      line-height: 98px; }
+    .top-wrap .top .logo-text {
+      float: left;
+      margin-left: 22px;
+      margin-top: 25px;
+      cursor: pointer; }
+      .top-wrap .top .logo-text h2 {
+        font-weight: bold;
+        color: #333333;
+        font-size: 30px;
+        margin-bottom: 7px;
+        height: 30px;
+        line-height: 30px; }
+      .top-wrap .top .logo-text p {
+        color: #707070;
+        font-size: 10px;
+        height: 9px; }
+
+.main-wrap {
+  min-width: 1130px;
+  height: 588px;
+  background: url(../image/loginImg/login-mainBg.jpg) no-repeat right top; }
+  .main-wrap .main {
+    position: relative;
+    width: 1130px;
+    height: 588px;
+    margin: 0 auto; }
+    .main-wrap .main .login {
+      position: absolute;
+      top: 32px;
+      right: 0;
+      width: 410px;
+      height: 556px;
+      background-color: #fff; }
+      .main-wrap .main .login .login-top {
+        height: 29px;
+        margin-top: 29px;
+        margin-bottom: 24px; }
+        .main-wrap .main .login .login-top p {
+          float: left;
+          height: 29px;
+          line-height: 29px;
+          font-size: 23px;
+          cursor: pointer; }
+        .main-wrap .main .login .login-top .fir-p {
+          width: 206px;
+          color: #ff6700;
+          text-indent: 67px;
+          background: url(../image/loginImg/login-p-mainBg.jpg) no-repeat right top; }
+        .main-wrap .main .login .login-top .sec-p {
+          width: 204px;
+          color: #666666;
+          text-indent: 41px; }
+        .main-wrap .main .login .login-top p:hover {
+          color: #ff6700; }
+      .main-wrap .main .login .login-main {
+        width: 410px;
+        margin-bottom: 24px; }
+        .main-wrap .main .login .login-main p {
+          width: 410px;
+          text-align: center; }
+          .main-wrap .main .login .login-main p input {
+            width: 346px;
+            height: 48px;
+            border: 1px solid #e0e0e0;
+            color: #9b9b9b;
+            text-indent: 14px; }
+          .main-wrap .main .login .login-main p .ipt {
+            margin-bottom: 14px; }
+      .main-wrap .main .login .login-img {
+        text-align: center; }
+      .main-wrap .main .login .login-bottom {
+        width: 410px;
+        height: 286px;
+        text-align: center;
+        cursor: pointer; }
+
+.login-foot-wrap {
+  min-width: 1130px;
+  height: 180px; }
+  .login-foot-wrap div {
+    width: 1130px;
+    height: 180px;
+    text-align: center;
+    margin: 0 auto; }
+    .login-foot-wrap div a {
+      display: inline-block;
+      margin-top: 104px;
+      width: 544px;
+      height: 46px; }
+      .login-foot-wrap div a img {
+        width: 544px;
+        height: 46px; }

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/list.css">
+    <link rel="stylesheet" href="../css/goods.css">
 </head>
 <body>
     <!-- head -->
@@ -94,11 +94,11 @@
                         <p><a href="">生活 箱包</a><span>&gt;</span></p>
                     </div>
                     <!-- <div class="all-goods-list-hover">
-                        <a href="">
-                            <img src="../image/indexImg/bannerList-pic.jpg" alt="">
-                            <p>小米10 Pro</p>
-                        </a>
-                    </div> -->
+                            <a href="">
+                                <img src="../image/indexImg/bannerList-pic.jpg" alt="">
+                                <p>小米10 Pro</p>
+                            </a>
+                        </div> -->
                 </li>
                 <li>
                     <a href="">小米手机</a>
@@ -126,39 +126,96 @@
             </div>
         </div>
     </div>
-    <!-- bread -->
-    <div class="bread-wrap">
-        <div class="bread">
-            <a href="">首页</a>
-            <span>></span>
-            <a href="">所有分类</a>
+    <!-- theme -->
+    <div class="theme-wrap">
+        <div class="theme">
+            <p class="theme-name">小米10 Pro</p>
+            <span>丨</span>
+            <a href="./goodsdetail.html" class="click-self">小米10 Pro</a>
+            <ul class="goods-infor">
+                <li><a href="">概述</a></li>
+                <li><a href="">参数</a></li>
+                <li><a href="">F码通道</a></li>
+                <li><a href="">咨询客服</a></li>
+                <li class="noBg"><a href="">用户评价</a></li>
+            </ul>
         </div>
     </div>
-    <!-- main -->
-    <div class="main-wrap">
-        <div class="main-phone ">
-            <div class="main-phone-top main-title">
-                手机 电话卡
-            </div>
-            <div class="main-phone-con list-main-con clearBoth">
-               
-            </div>
-        </div>
-        <div class="main-TV">
-            <div class=" main-title">
-                电视 盒子
-            </div>
-            <div class="main-TV-con list-main-con clearBoth">
-            
-            </div>
-        </div>
+    <!-- 提示 hint -->
+    <div class="hint-wrap">
+       <div class="hint">
+           <p class="hint-p">为方便您购买,请提前登录</p>
+           <a href="./login.html" class="hint-login">立即登录</a>
+            <p class="close">x</p>
+        </div> 
     </div>
+    <!-- goods-main -->
+    <div class="goods-main-wrap">
+        <div class="goods-main clearBoth">
+            <div class="goods-carousel">
+                <div class="main">
+                    <img class="show" src="../image/goodsImg/goods-carousel-pic-0.jpg" alt="">
+                    <img src="../image/goodsImg/goods-carousel-pic-1.jpg" alt="">
+                    <img src="../image/goodsImg/goods-carousel-pic-2.jpg" alt="">
+                    <img src="../image/goodsImg/goods-carousel-pic-3.jpg" alt="">
+                    <img src="../image/goodsImg/goods-carousel-pic-4.jpg" alt="">
+                </div>
+                <p class="prev">&lt;</p>
+                <p class="next">&gt;</p>
+                <ul class="num">
+                    <li class="active">1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                </ul>
+            </div>
+            <div class="goods-detail">
+                <img src="../image/goodsImg/goods-main-right.jpg" alt="">
+            </div>
+        </div>
+        
+    </div>
+   <!-- bottom -->
+    <div class="goods-bottom-wrap">
+            <div class="goods-bottom">
+                <h3>价格说明</h3>
+                <div class="goods-bottom-img">
+                    <img src="../image/goodsImg/goods-bottom.jpeg" alt="">
+                </div>
+            </div>
+    </div>
+
     <!-- foot -->
     <div class="foot-wrap">
         <div class="foot"><a href="#"><img src="../image/indexImg/foot-pic.jpg" alt=""></a></div>
     </div>
+    <!-- 定位 锚点 toTop-->
+    <div class="anchor-point-wrap">
+        <ul class="anchor-point">
+            <li class="phoneApp">
+                <p>手机APP</p>
+                <div class="QR"><img src="../image/indexImg/anchor-pic.jpg" alt=""></div>
+            </li>
+            <li class="personal">
+                <p>个人中心</p>
+            </li>
+            <li class="service">
+                <p>售后服务</p>
+            </li>
+            <li class=" airlines">
+                <p>人工客服</p>
+            </li>
+            <li class="goods-cart">
+                <p>购物车</p>
+            </li>
+        </ul>
+        <div class="toTop">
+            <p>回顶部</p>
+        </div>
+    </div>
     <script src="../script/utils.js"></script>
     <script src="../script/public.js"></script>
-    <script src="../script/list.js"></script>
+    <script src="../script/goods.js"></script>
 </body>
 </html>

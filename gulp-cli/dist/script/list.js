@@ -68,3 +68,81 @@ var listTopModule = (function () {
         }
     }
 })()
+
+var listMainModule = (function(){
+    var phoneCon = $1('.main-phone-con');
+    var tvCon = $1('.main-TV-con');
+    //获取和转换数据
+    function dataDeal(json,dom){
+        var json = JSON.parse(json);
+        var len = json.imgUrl.length - 1;
+        var nameLen = json.name.length - 1;
+        var imgSrc = json.imgUrl.substring(1, len).split(',');
+        var nameSrc = json.name.substring(1, nameLen).split(',');
+        for (var i = 0; i < imgSrc.length; i++) {
+            dom.innerHTML += `
+        <a href="./goodsdetail" code="${i}00">
+                    <img src=${imgSrc[i]} alt="">
+                    <p>${nameSrc[i]}</p>
+                </a>`;
+        }
+        for (var j = 0; j < 10; j++) {
+            dom.innerHTML += `
+        <a href="./goodsdetail" code="000">
+                    <img src=${imgSrc[0]} alt="">
+                    <p>${nameSrc[0]}</p>
+                </a>`;
+        }
+    }
+    //请求手机数据
+    ajax({
+        url:'../data/listgoods-phone.json',
+        type:'get',
+        dataType:'json',
+        success:function(json){
+            dataDeal(json,phoneCon);
+            var phoneConA = phoneCon.querySelectorAll('a');
+
+            for (var n = 0; n < phoneConA.length; n++) {
+                if ((n+1) % 5 === 0 ) {
+                    phoneConA[n].className = 'noBorder';
+                }
+            }
+        }
+    });
+    //请求电视数据
+    ajax({
+        url: '../data/listgoods-tv.json',
+        type: 'get',
+        dataType: 'json',
+        success: function (json) {
+            dataDeal(json,tvCon);
+            var tvConA = tvCon.querySelectorAll('a');
+            for (var n = 0; n < tvConA.length; n++) {
+                if ((n + 1) % 5 === 0) {
+                    tvConA[n].className = 'noBorder';
+                }
+            }
+        }
+    });
+    //main-title点击事件
+    var mainTitle = $2('.main-title');
+    var ghb = 1;
+
+    function listShow(dom){
+        dom.nextElementSibling.style.display = 'block';
+        dom.style.background = 'url(../image/listImg/main-phone-topBg.jpg) no-repeat left 30px';
+        ghb = 1;
+    }
+    for (var i = 0; i < mainTitle.length;i++){
+        mainTitle[i].onclick = function(){
+            if (ghb){
+                this.nextElementSibling.style.display = 'none';
+                this.style.background = 'url(../image/listImg/main-phone-topBgClick.jpg) no-repeat left 30px';
+                ghb = 0; 
+            }else{
+                listShow(this); 
+            }
+        }
+    }
+})()
